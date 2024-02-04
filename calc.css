@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+}
+#calculator-container{
+    width: 45rem;
+    height: 25.85rem;
+    background-color: black;
+    margin-top: 7rem;
+    border-radius: 10px;
+    padding-top: 1px;
+}
+.display-container{
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+#displayAns, #displayInp{
+    border: none;
+    height: 30px;
+    background-color: #495057;
+    text-align: right;
+    font-size: 18px;
+    color: gray;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+#displayInp{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+input[type="text"]{
+    width: 98.9%;
+    border: none;
+    background-color: #495057;
+    text-align: right;
+    font-size: 22px;
+    color: lightgrey;
+}
+button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    margin-bottom: 1px;
+    color: whitesmoke;
+    font-family: 'bahnschrift';
+    font-size: 15px;
+    font-weight: normal;
+    background-color: #212529;
+}
+button:hover{
+    background-color:  rgb(27, 27, 27);
+}
+.numeric-button{
+    background-color: gray;
+}
+.numeric-button:hover{
+    background-color: darkgray;
+}
+.scientific-button{
+    width: 69px;
+    background-color: #404347;
+}
+.scientific-button:hover{
+    background-color: rgb(52, 52, 52) ;
+}
+
+.rad-btn, .deg-btn{
+    color: aqua;
+    height: 20px;
+    width: 50px;
+    border-radius: 3px;
+    margin-top: 2px;
+    background-color: transparent;
+}
+.rad-btn:hover, .deg-btn:hover{
+    cursor: pointer;
+}
+

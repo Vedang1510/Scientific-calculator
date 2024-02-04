@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Scientific Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <center>
+        <div id="calculator-container">
+        <button class="rad-btn" onclick="radBtn()">Rad</button>
+        <button class="deg-btn">Deg</button>
+        <div class="display-container">
+            <div id="displayAns" ></div>
+            <div id="displayInp"><input type="text" id="display"></div>
+        </div>
+        <button class="scientific-button" onclick="sineInv()">sin<sup>-1</sup></button>
+        <button class="scientific-button" onclick="cosineInv()">cos<sup>-1</sup></button>
+        <button class="scientific-button" onclick="tangentInv()">tan<sup>-1</sup></button>
+        <button onclick="appendToDisplay('(')">(</button>
+        <button onclick="appendToDisplay(')')">)</button>
+        <button style="color:red;"onclick="CE()">CE</button>
+        <button onclick="clearDisplay()" style="background-color: #660708">AC</button>
+        <br>
+        <button class="scientific-button" onclick="sine()">sin</button>
+        <button class="scientific-button" onclick="cosine()">cos</button>
+        <button class="scientific-button" onclick="tangent()">tan</button>
+        <button onclick="appendToDisplay('7')" class="numeric-button">7</button>
+        <button onclick="appendToDisplay('8')" class="numeric-button">8</button>
+        <button onclick="appendToDisplay('9')" class="numeric-button">9</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <br>
+        <button class="scientific-button" onclick="exponential()">e</button>
+        <button class="scientific-button" onclick="appendToDisplay('^')">^</button>
+        <button class="scientific-button" onclick="sqrt()">√</button>
+        <button onclick="appendToDisplay('4')" class="numeric-button">4</button>
+        <button onclick="appendToDisplay('5')" class="numeric-button">5</button>
+        <button onclick="appendToDisplay('6')" class="numeric-button">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <br>
+        <button class="scientific-button" onclick="log()">log</button>
+        <button class="scientific-button" onclick="ln()">ln</button>
+        <button class="scientific-button" onclick="appendToDisplay('%')">%</button>
+        <button onclick="appendToDisplay('1')" class="numeric-button">1</button>
+        <button onclick="appendToDisplay('2')" class="numeric-button">2</button>
+        <button onclick="appendToDisplay('3')" class="numeric-button">3</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <br>
+        <button style="border-bottom-left-radius: 10px;"class="scientific-button" onclick="Ans()">Ans</button>
+        <button class="scientific-button" onclick="factorial()">x!</button>
+        <button class="scientific-button" onclick="appendToDisplay('3.14')">Pi</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('0')" class="numeric-button">0</button>
+        <button onclick="calculate()" style="background-color: #2d3142;">=</button>
+        <button style="border-bottom-right-radius: 10px;"onclick="appendToDisplay('/')">/</button>
+    </div>
+    </center>
+    <script src="calc.js"></script>
+</body>
+</html>
